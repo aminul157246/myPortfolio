@@ -1,6 +1,6 @@
-import img1 from '../../assets/33project.png'
+import img1 from '../../assets/home.png'
 import img2 from '../../assets/22project.png'
-import img3 from '../../assets/3project.png'
+import img3 from '../../assets/bridly.png'
 import { FaChevronRight } from "react-icons/fa";
 import './MyProject.css'
 
@@ -12,7 +12,7 @@ const MyProject = () => {
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 justify-center items-center'>
 
                 <div>
-                    <a href="https://building-management-a5b4a.web.app/">
+                    <a href="https://remarkable-babka-8ef47b.netlify.app/">
 
 
 
@@ -21,7 +21,7 @@ const MyProject = () => {
                                 <figure><img className='h-[250px] w-[250px] rounded-lg' src={img1} alt="Shoes" /></figure>
 
                                 <div className=" team-text">
-                                    <h2 className="text-2xl font-bold">Building Apartment </h2>
+                                    <h2 className="text-2xl font-bold">New Home </h2>
 
                                     <div className="card-actions justify-end mt-16 flex items-center">
                                         <p>see project</p>
@@ -35,16 +35,16 @@ const MyProject = () => {
                 </div>
 
                 <div className='lg:mt-36'>
-                    <a href="https://brand-shop-d10ed.web.app/">
+                    <a href="https://elegant-marzipan-f0ca7b.netlify.app/ ">
 
 
                         <div className=" shadow-xl">
                             <div className="single-team">
 
 
-                                <figure><img className='h-[250px] w-[250px] rounded-lg' src={img2} alt="Shoes" /></figure>
+                                <figure><img className='h-[250px] w-[250px] rounded-lg' src={img3} alt="Shoes" /></figure>
                                 <div className="team-text">
-                                    <h2 className="text-2xl font-bold">Car Doctor</h2>
+                                    <h2 className="text-2xl font-bold">Bridely</h2>
 
                                     <div className="card-actions justify-end mt-16">
                                         <p>see project</p>
@@ -63,16 +63,16 @@ const MyProject = () => {
                 </div>
 
                 <div className='lg:mt-72'>
-                    <a href="https://event-management-7bff9.web.app/">
+                    <a href="https://brand-shop-d10ed.web.app/">
 
 
                         <div className=" shadow-xl">
                             <div className="single-team">
 
 
-                                <figure><img className='h-[250px] w-[250px] rounded-lg' src={img3} alt="Shoes" /></figure>
+                                <figure><img className='h-[250px] w-[250px] rounded-lg' src={img2} alt="Shoes" /></figure>
                                 <div className="team-text">
-                                    <h2 className="text-2xl font-bold">Event Management</h2>
+                                    <h2 className="text-2xl font-bold">Car Shop</h2>
 
                                     <div className="card-actions justify-end mt-16">
                                         <p>see project</p>

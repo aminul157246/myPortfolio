@@ -191,119 +191,27 @@
 
 
 
-
-/* Frontend developer animation */
-.container{
-    display: inline-block;
-}
-.text-animation{
-    letter-spacing: 8px;
-    font-family: monospace;
-    border-right: 2px solid;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation : 
-       typing 2s steps(12),
-       cursor .4s step-end infinite alternate
-
-}
-@keyframes cursor {
-    50%{
-        border-color: transparent;
-    }
-    
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    
-}
-
-/* Aminul Islam animation */
-.wrapper{
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-}
-
-.wrapper p{
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 2px;
-    color: black;
-}
-
-.text-area{
-    font-size: 50px;
-    font-family: roboto;
-    font-weight: bold;
-    letter-spacing: -5px;
-}
-
-.text-area span{
-    color : #262626;
-    opacity: 0;
-    transform: translate(-300px, 0) scale(0);
-    animation: animateAminul 3s forwards ;
-    display: inline-block;
-}
-
-.text-area span:nth-of-type(2){
-    animation-delay: .1s;
-}
-.text-area span:nth-of-type(3){
-    animation-delay: .2s;
-}
-.text-area span:nth-of-type(4){
-    animation-delay: .3s;
-}
-.text-area span:nth-of-type(5){
-    animation-delay: .4s;
-}
-.text-area span:nth-of-type(6){
-    animation-delay: .5s;
-}
-.text-area span:nth-of-type(7){
-    animation-delay: .6s;
-}
-.text-area span:nth-of-type(8){
-    animation-delay: .7s;
-}
-.text-area span:nth-of-type(9){
-    animation-delay: .8s;
-}
-.text-area span:nth-of-type(10){
-    animation-delay: .9s;
-}
-.text-area span:nth-of-type(11){
-    animation-delay: .10s;
-}
-.text-area span:nth-of-type(12){
-    animation-delay: .11s;
-}
-
-@keyframes animateAminul{
-   60%{
-    transform: translate(20px,0) scale(1);
-    color: black;
-   }
-   80%{
-    transform: translate(20px,0) scale(1);
-    color: black;
-   }
-   99%{
-    transform: translate(0) scale(1.2);
-    color:  #fff;
-   }
+.typewriter h1 {
+    font-size: 48px;
+    font-weight: 500;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 5px solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
   
-   100%{
-    transform: translate(0) scale(1);
-    color: black;
-    opacity: 1;
-   }
-   
-} 
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }

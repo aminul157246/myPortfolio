@@ -1,6 +1,6 @@
 
 import { BsDownload } from 'react-icons/bs';
-import img from '../../assets/aboout.jpg'
+import img from '../../assets/fotor-202403285527.png'
 import './About.css'
 
 const About = () => {
@@ -11,7 +11,7 @@ const About = () => {
             
             <div className='flex-1 flex justify-center items-center '>
                 <div className=''>
-                    <img className='rounded-full w-96 h-96' src={img} alt="" />
+                    <img className='w-[400px]' src={img} alt="" />
 
                 </div>
                     
@@ -20,7 +20,7 @@ const About = () => {
 
             <div className='flex-1 p-12 lg:p-0'>
                 <h2 className="text-3xl font-bold">So, Who am I..?</h2>
-                <p> I have found my passion in web development. I love spending time coding and encountering new challenges. I am highly adaptable to new challenges and projects. I enjoy exploring new things and I have a lot of interest in machine learning and artificial intelligence.I am currently pursuing my graduation in Electrical Engineering at University of Chittagong</p>
+                <p> I have found my passion in web development. I love spending time coding and enjoy exploring new things. I have a lots of interest in machine learning and artificial intelligence.I am currently pursuing my graduation in Electrical Engineering at University of Chittagong</p>
                 <div className='pt-4'>
                 <a href='https://drive.google.com/file/d/1j1bOLJD0JXOzrcEgkyCYCYKc2D_9Ktaa/view' download >
                     <div>

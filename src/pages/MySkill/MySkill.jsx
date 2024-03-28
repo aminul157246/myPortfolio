@@ -5,7 +5,7 @@ const MySkill = () => {
 
             
             <h2 className="text-5xl font-bold text-center ">MY <span className="text-indigo-500">SKILL</span></h2>
-            <p className=" text-center mb-8">Proficiency in Programming Languages: Mastery in languages like  HTML, CSS, and JavaScript is fundamental. <br /> Additionally, familiarity with  frameworks and libraries such as React, Angular, or Vue.js is often required.
+            <p className=" text-center my-8"> Familiar with HTML, CSS, Java script, React js, Node js, Express js, MongoDB. <br /> Additionally,   technologies such as Firebase, surge, netlify, github etc.
 </p>
 
             <div className="grid grid-cols-3 gap-12">
