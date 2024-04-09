@@ -1,0 +1,26 @@
+.css-after-gradiant {
+    position: relative;
+  }
+  .css-after-gradiant img {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+  }
+  .css-after-gradiant::after {
+    content: "";
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 87, 34, 1) 0%,
+      rgba(205, 220, 57, 1) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+  }
+  /* Code language: CSS (css) */
