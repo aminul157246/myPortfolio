@@ -13,13 +13,17 @@ function App() {
   return (
    <div>
     <Navbar></Navbar>
-<div className="max-w-7xl mx-auto">
+<div>
 <Home></Home>
+
+<div className="mx-12">
+  
 <About></About>
 <MySkill></MySkill>
 <MyProject></MyProject>
 <MyExperience></MyExperience>
 <ContactUs></ContactUs>
+</div>
 </div>
 <Footer></Footer>
    </div>

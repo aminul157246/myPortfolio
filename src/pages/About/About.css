@@ -2,14 +2,14 @@
     position: relative;
   }
   .css-after-gradiant img {
-    width: 380px;
-    height: 380px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
   }
   .css-after-gradiant::after {
     content: "";
-    width: 390px;
-    height: 390px;
+    width: 330px;
+    height: 330px;
     border-radius: 50%;
     background: linear-gradient(
       90deg,
