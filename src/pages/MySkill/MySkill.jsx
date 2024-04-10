@@ -1,9 +1,9 @@
 const MySkill = () => {
     return (
-        <div className="my-12" id="skill">
+        <div className="my-12 lg:mx-12" id="skill">
 
             
-            <h2 className="text-5xl font-bold text-center ">MY <span className="text-indigo-500">SKILL</span></h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-center ">MY <span className="text-indigo-500">SKILL</span></h2>
             <p className=" text-center max-w-xs lg:max-w-3xl mx-auto my-8"> Familiar with HTML, CSS, Java script, React js, Node js, Express js, MongoDB. <br /> Additionally,   technologies such as Firebase, surge, netlify, github etc.
 </p>
 

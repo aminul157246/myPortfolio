@@ -3,14 +3,22 @@ import { CgMail } from "react-icons/cg";
 import { FaPhone } from "react-icons/fa";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import emailjs from '@emailjs/browser';
-import  { useRef } from 'react';
+import { useRef } from 'react';
 import swal from "sweetalert";
+import { RiTwitterXLine } from "react-icons/ri";
 
+// import toast, { Toaster } from 'react-hot-toast';
 
 
 const ContactUs = () => {
 
-    const form = useRef(); 
+
+    // const handleClick = () => {
+    //     toast.success('Message sent successfully !')
+    // }
+
+
+    const form = useRef();
 
     const sendEmail = (e) => {
 
@@ -30,23 +38,26 @@ const ContactUs = () => {
             }, (error) => {
                 console.log(error.text);
             });
-            
+
 
     };
 
 
     return (
-        <div id="contact" className="my-12">
-            <h2 className="text-5xl font-bold text-center mb-8 title-style">GET IN <span className="text-indigo-500">TOUCH</span></h2>
+        <div id="contact" className="my-12 mx-6 lg:mx-12">
+            {/* <Toaster */}
+            {/* position="top-right" */}
+            {/* /> */}
+            <h2 className="text-3xl lg:text-5xl font-bold text-center mb-8 title-style">GET IN <span className="text-indigo-500">TOUCH</span></h2>
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className=" space-y-3 p-5">
-                    <h3 className="text-3xl font bold"> DON'T BE SHY !</h3>
-                    <p>Feel free to in touch with me. I am always open to discussing new projects, crate ideas or opportunity to be part of your visions</p>
+                    <h3 className="text-xl lg:text-3xl font bold"> DON'T BE SHY !</h3>
+                    <p>Feel free to in touch with me.  I am always open to discussing <br /> new projects, crate ideas or opportunity to be part of your visions</p>
                     <div className="flex gap-3 items-center">
                         <CgMail className="text-3xl text-indigo-500"></CgMail>
                         <div>
 
-                            <p>aminul.islam.157246@gmail.com</p>
+                            <p>aminul157246@gmail.com</p>
                         </div>
                     </div>
                     <div className="flex gap-3 items-center">
@@ -58,33 +69,38 @@ const ContactUs = () => {
                     <div className="flex gap-2   items-center">
 
                         <a href="https://github.com/aminul157246">
-                            <FaGithub className="text-2xl hover:text-indigo-500"></FaGithub>
+                            <FaGithub className="text-xl "></FaGithub>
                         </a>
                         <a href="https://www.linkedin.com/in/aminulislam157246/">
-                            <FaLinkedinIn className="text-2xl hover:text-indigo-500"></FaLinkedinIn>
+                            <FaLinkedinIn className="text-xl text-blue-500"></FaLinkedinIn>
                         </a>
-                        <a href="https://web.facebook.com/profile.php?id=100049235346943"> <FaFacebookF className="text-2xl hover:text-indigo-500"></FaFacebookF>
+                        <a href="https://web.facebook.com/profile.php?id=100049235346943"> <FaFacebookF className="text-xl text-blue-800"></FaFacebookF>
+                        </a>
+                        <a href="https://twitter.com/aminul157246"> <RiTwitterXLine className="text-xl "></RiTwitterXLine>
                         </a>
                     </div>
                 </div>
                 <div className="   pt-6 p-6">
 
                     <form ref={form} onSubmit={sendEmail}>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-4 items-center justify-center">
-                        <input className="bg-base-200 rounded-3xl lg:px-4 py-2" type="text" placeholder="Your Name"   name="form_name" />
-                        <input className="bg-base-200 rounded-3xl lg:px-4 py-2" type="email" placeholder="Your Email" name="form_email" />
-                <input className="bg-base-200 rounded-3xl lg:px-4 py-2" type="text" placeholder="Your Subject" /> 
-                </div>
-
-                <div className="flex justify-center items-center">
-                        <textarea className="bg-base-200 rounded-3xl mt-6 lg:p-4"   placeholder="Your Message" id="" cols="85" rows="5" name="message" />
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4    items-center justify-center">
+                            <input className="bg-base-200 rounded-3xl px-2 lg:px-4 py-3" required type="text" placeholder="Your Name" name="form_name" />
+                            <input className="bg-base-200 rounded-3xl px-2 lg:px-4 py-3" required type="email" placeholder="Your Email" name="form_email" />
                         </div>
-                        <div className="pl-20 mt-6">
-                        <input className="btn  rounded-3xl hover:bg-indigo-500" type="submit" value="Send Message" />
+
+                        <div className="flex justify-center items-center">
+                            <textarea className="bg-base-200 rounded-3xl mt-6 p-2 lg:p-4" required placeholder="Your Message" id="" cols="90" rows="5" name="message" />
+                        </div>
+                        <div className="lg:pl-6 mt-6">
+                            <button className="bg-indigo-500 px-4 py-2 rounded-3xl"
+                            //  onClick={handleClick}
+                             >
+                                Send Message
+                            </button>
 
                         </div>
-                        
-       </form>
+
+                    </form>
 
 
                 </div>

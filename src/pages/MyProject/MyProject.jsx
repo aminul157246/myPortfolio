@@ -33,9 +33,9 @@ import 'swiper/css/scrollbar';
 
 const MyProject = () => {
     return (
-        <div className='' id='project'>
+        <div className='mx-6 lg:mx-12' id='project'>
             <p className="text-indigo-500 text-center">VISIT MY PROJECTS AND KEEP YOUR FEEDBACK</p>
-            <h2 className="text-5xl font-bold text-center">MY PROJECTS</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-center">MY PROJECTS</h2>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 justify-center items-center'>
 
                 <div>

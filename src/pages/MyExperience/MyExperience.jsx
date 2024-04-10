@@ -15,22 +15,22 @@ import img11 from '../../assets/vite.jpeg'
 
 const MyExperience = () => {
     return (
-        <div className="mt-12 mb-24 ">
+        <div className="mt-12 mx-6 lg:mx-12  mb-24 ">
             <p className="text-indigo-500 text-center mt-12">40+ projects completed using HTML,CSS, JS, React js, node js , mongoDB, firebase</p>
-            <h1 className='text-5xl font-bold text-center  mb-12'>MY EXPERIENCE </h1>
+            <h1 className='text-3xl mt-4 lg:text-5xl font-bold text-center  mb-12'>MY EXPERIENCE </h1>
         <Marquee>
             
-            <img className=" ml-8 pt-3 w-24 h-24 " src={img1} alt="" />
-            <img className=" ml-8 pt-3 w-24 h-24" src={img2} alt="" />
-            <img className=" ml-8 pt-3 w-24 h-24" src={img3} alt="" />
-            <img className=" ml-8 pt-3 w-24 h-24" src={img4} alt="" />
-            <img className=" ml-8 pt-3 w-24 h-24" src={img5} alt="" />
-            <img className=" ml-8 pt-3 w-24 h-24" src={img6} alt="" />
-            <img className=" ml-8 pt-3 w-24 h-24" src={img7} alt="" />
-            <img className=" ml-8 pt-3 w-24 h-24" src={img8} alt="" />
-            <img className=" ml-8 pt-3 w-24 h-24" src={img9} alt="" />
-            <img className=" ml-8 pt-3 w-24 h-24" src={img10} alt="" />
-            <img className=" ml-8 pt-3 w-24 h-24" src={img11} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24 " src={img1} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img2} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img3} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img4} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img5} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img6} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img7} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img8} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img9} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img10} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img11} alt="" />
            
         </Marquee>
     </div>
