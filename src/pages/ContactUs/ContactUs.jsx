@@ -9,8 +9,20 @@ import { RiTwitterXLine } from "react-icons/ri";
 
 // import toast, { Toaster } from 'react-hot-toast';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+
 
 const ContactUs = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1200,
+
+        });
+      
+    }, []);
 
 
     // const handleClick = () => {
@@ -48,9 +60,9 @@ const ContactUs = () => {
             {/* <Toaster */}
             {/* position="top-right" */}
             {/* /> */}
-            <h2 className="text-3xl lg:text-5xl font-bold text-center mb-8 title-style">GET IN <span className="text-indigo-500">TOUCH</span></h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-center mb-8 title-style" >GET IN <span className="text-indigo-500">TOUCH</span></h2>
             <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className=" space-y-3 p-5">
+                <div className=" space-y-3 p-5" data-aos="fade-right">
                     <h3 className="text-xl lg:text-3xl font bold"> DON'T BE SHY !</h3>
                     <p>Feel free to in touch with me.  I am always open to discussing <br /> new projects, crate ideas or opportunity to be part of your visions</p>
                     <div className="flex gap-3 items-center">
@@ -80,7 +92,7 @@ const ContactUs = () => {
                         </a>
                     </div>
                 </div>
-                <div className="   pt-6 p-6">
+                <div className="    pt-6 p-6" data-aos="fade-left">
 
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4    items-center justify-center">

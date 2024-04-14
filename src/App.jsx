@@ -11,19 +11,18 @@ import MySkill from "./pages/MySkill/MySkill"
 function App() {
 
   return (
-   <div>
-    <Navbar></Navbar>
-<div>
-<Home></Home>
-
-<About></About>
-<MySkill></MySkill>
-<MyProject></MyProject>
-<MyExperience></MyExperience>
-<ContactUs></ContactUs>
-</div>
-<Footer></Footer>
-   </div>
+    <div>
+      <Navbar></Navbar>
+      <div>
+        <Home></Home>
+        <About></About>
+        <MySkill></MySkill>
+        <MyExperience></MyExperience>
+        <MyProject></MyProject>
+        <ContactUs></ContactUs>
+      </div>
+      <Footer></Footer>
+    </div>
   )
 }
 

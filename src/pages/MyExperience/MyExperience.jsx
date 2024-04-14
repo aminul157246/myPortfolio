@@ -11,6 +11,7 @@ import img8 from '../../assets/github-logo.png'
 import img9 from '../../assets/vercel-logo.png'
 import img10 from '../../assets/tail.png'
 import img11 from '../../assets/vite.jpeg'
+import img12 from '../../assets/redux.png'
 
 
 const MyExperience = () => {
@@ -31,6 +32,7 @@ const MyExperience = () => {
             <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img9} alt="" />
             <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img10} alt="" />
             <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img11} alt="" />
+            <img className=" ml-8 pt-3 w-16 h-16 lg:w-24 lg:h-24" src={img12} alt="" />
            
         </Marquee>
     </div>

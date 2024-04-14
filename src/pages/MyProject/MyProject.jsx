@@ -31,7 +31,22 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+
+
+
 const MyProject = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1200,
+        });
+      
+    }, []);
+
+
     return (
         <div className='mx-6 lg:mx-12' id='project'>
             <p className="text-indigo-500 text-center">VISIT MY PROJECTS AND KEEP YOUR FEEDBACK</p>
@@ -39,7 +54,7 @@ const MyProject = () => {
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 justify-center items-center'>
 
                 <div>
-                    <div className="shadow-xl p-8">
+                    <div className="shadow-xl p-8" data-aos="fade-right">
                         <div className="single-team">
                             <Swiper
                                 modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -86,7 +101,7 @@ const MyProject = () => {
 
 
                 <div>
-                    <div className="shadow-xl p-8">
+                    <div className="shadow-xl p-8" data-aos="fade-up">
                         <div className="single-team">
                             <Swiper
                                 modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -133,7 +148,7 @@ const MyProject = () => {
 
 
                 <div>
-                    <div className="shadow-xl p-8">
+                    <div className="shadow-xl p-8" data-aos="fade-left">
                         <div className="single-team">
                             <Swiper
                                 modules={[Navigation, Pagination, Scrollbar, A11y]}
