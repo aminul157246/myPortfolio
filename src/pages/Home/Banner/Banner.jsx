@@ -21,9 +21,9 @@ const Banner = () => {
         <div className="pb-8 lg:pb-0 lg:pl-48 bg-gradient-to-r from-indigo-400 from-10% via-sky-400 via-30% to-emerald-400 to-90%  lg:h-[100vh]  lg:mb-12 border-5">
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:justify-center lg:items-center pl-0    pt-12 lg:gap-12'>
 
-                <div className='lg:flex-1 p-8 lg:p-0'>
+                <div className=' p-8 lg:p-0'>
 
-                    <div className="wrapper">
+                    <div className="wrapper text-gray-800">
                         <h4 className=" md:text-2xl lg:text-2xl ml-4 font-bold">Hi , I'm</h4>
                         <h3 data-aos="flip-down" data-aos-duration="3000" 
                            

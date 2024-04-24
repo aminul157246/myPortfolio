@@ -4,8 +4,8 @@ import { RiTwitterXLine } from "react-icons/ri";
 const Footer = () => {
     return (
         <div>
-            <footer className=" text-center mx-6 lg:mx-12   p-4 bg-base-100  rounded-xl mt-12 py-12 text-black">
-                <p>Copyright © 2023 - All right reserved</p>
+            <footer className=" text-center mx-6 lg:mx-12 text-gray-400  p-4 bg-base-100  rounded-xl mt-12 py-12">
+                <p>Copyright © 2024 - All right reserved</p>
                 <div className="flex gap-2 justify-center  items-center mt-6">
 
                     <a href="https://github.com/aminul157246">
